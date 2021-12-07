@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace OO3.Lottery_Functionality
 {
-    interface IVerifiable
+    interface IVerifiable<T>
     {
+        T Generate();
+        bool Verify(T entity);
     }
 }
