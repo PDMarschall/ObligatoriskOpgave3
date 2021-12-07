@@ -9,11 +9,10 @@ namespace OO3.Lottery_Functionality.Coupon.Standard
 {
     public class LotteryNumber : Number
     {
-        
+        public override int MaxVærdi { get => 36;}
         public LotteryNumber()
         {
 
-        }
-
+        }        
     }
 }

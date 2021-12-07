@@ -7,12 +7,14 @@ using System.Threading.Tasks;
 namespace OO3.Lottery_Functionality.Abstract_Classes
 {
     public abstract class Row
-    {
-        private Number[] rowArray;
-
+    {        
+        private Number[] rowArray = new Number[7];
+        
         public Row()
         {
 
         }
+
+
     }
 }
