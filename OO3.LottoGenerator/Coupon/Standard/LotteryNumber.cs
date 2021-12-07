@@ -9,6 +9,7 @@ namespace OO3.Lottery_Functionality.Coupon.Standard
 {
     public class LotteryNumber : Number
     {
+        
         public LotteryNumber()
         {
 
