@@ -10,9 +10,15 @@ namespace OO3.Lottery_Functionality.Coupon
     public class LotteryCoupon : IVerifiable<LotteryCoupon>
     {
         IVerifiable<Row>[] couponContents;
+        
         public LotteryCoupon()
         {
+            couponContents = new IVerifiable<Row>[10];
+        }
 
+        public LotteryCoupon(bool joker)
+        {
+            couponContents = new IVerifiable<Row>[12];            
         }
 
         public LotteryCoupon Generate()
