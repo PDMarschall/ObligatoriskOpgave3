@@ -8,7 +8,7 @@ namespace OO3.Lottery_Functionality.Abstract_Classes
 {
     public abstract class Row : IVerifiable<Row>
     {
-        private IVerifiable<Number>[] rowArray = new IVerifiable<Number>[7];
+        private IEnumerable<Number> rowNumberCollection;
 
         public Row()
         {
