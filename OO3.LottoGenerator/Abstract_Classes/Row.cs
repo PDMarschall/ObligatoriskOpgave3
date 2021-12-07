@@ -8,6 +8,8 @@ namespace OO3.Lottery_Functionality.Abstract_Classes
 {
     public abstract class Row
     {
+        private Number[] rowArray;
+
         public Row()
         {
 

@@ -8,6 +8,11 @@ namespace OO3.Lottery_Functionality.Abstract_Classes
 {
     public abstract class Number
     {
+        private int _value;
 
+        public Number()
+        {
+
+        }
     }
 }
