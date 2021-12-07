@@ -7,21 +7,12 @@ using OO3.Lottery_Functionality.Abstract_Classes;
 
 namespace OO3.Lottery_Functionality.Coupon.Standard
 {
-    public class LotteryNumber : Number, IVerifiable<LotteryNumber>
+    public class LotteryNumber : Number
     {
         public LotteryNumber()
         {
 
         }
 
-        public LotteryNumber Generate()
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool Verify(LotteryNumber entity)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
