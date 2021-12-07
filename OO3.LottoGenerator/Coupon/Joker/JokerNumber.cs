@@ -10,18 +10,9 @@ namespace OO3.Lottery_Functionality.Coupon.Joker
     public class JokerNumber : Number
     {
         public override int MaxVærdi => 9;
-        public JokerNumber()
+        public JokerNumber() : base()
         {
-
-        }
-        public override Number Generate()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override bool Verify(Number entity)
-        {
-            throw new NotImplementedException();
+            
         }
     }
 }

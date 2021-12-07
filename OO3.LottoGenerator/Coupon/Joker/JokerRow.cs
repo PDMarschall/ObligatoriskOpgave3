@@ -11,7 +11,7 @@ namespace OO3.Lottery_Functionality.Coupon.Joker
     {
         public JokerRow()
         {
-
+            
         }
 
         public override Row Generate()
