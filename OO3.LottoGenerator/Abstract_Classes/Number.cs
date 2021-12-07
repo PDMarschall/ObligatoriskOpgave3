@@ -11,11 +11,11 @@ namespace OO3.Lottery_Functionality.Abstract_Classes
         public abstract int MaxVærdi { get; }
         public int Værdi { get; set; }
 
-        private Random rnd = new Random();
+        private Random _rnd = new Random();
 
         public Number()
         {
-            Værdi = rnd.Next(MaxVærdi + 1);
+            Værdi = _rnd.Next(MaxVærdi + 1);
         }
     }
 }
