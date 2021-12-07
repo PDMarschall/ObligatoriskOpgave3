@@ -8,6 +8,7 @@ namespace OO3.Lottery_Functionality.Coupon
 {
     public class LotteryCoupon : IVerifiable<LotteryCoupon>
     {
+        
         public LotteryCoupon()
         {
 

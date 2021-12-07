@@ -8,18 +8,19 @@ using OO3.Lottery_Functionality.Abstract_Classes;
 
 namespace OO3.Lottery_Functionality.Coupon.Standard
 {
-    public class LotteryRow : Row, IVerifiable<LotteryNumber>
+    public class LotteryRow : Row
     {
         public LotteryRow()
         {
 
         }
-        public LotteryNumber Generate()
+
+        public override Row Generate()
         {
             throw new NotImplementedException();
         }
 
-        public bool Verify(LotteryNumber entity)
+        public override bool Verify(Row entity)
         {
             throw new NotImplementedException();
         }

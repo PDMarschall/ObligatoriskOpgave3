@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OO3.Lottery_Functionality.Abstract_Classes
 {
-    public abstract class Number
+    public abstract class Number : IVerifiable<Number>
     {
         public abstract int MaxVærdi { get; }
         public int Værdi { get; set; }
@@ -17,5 +17,8 @@ namespace OO3.Lottery_Functionality.Abstract_Classes
         {
             Værdi = rnd.Next(MaxVærdi + 1);
         }
+
+        public abstract Number Generate();
+        public abstract bool Verify(Number entity);
     }
 }
