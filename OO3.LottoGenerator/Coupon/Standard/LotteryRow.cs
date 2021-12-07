@@ -10,7 +10,7 @@ namespace OO3.Lottery_Functionality.Coupon.Standard
 {
     public class LotteryRow : Row
     {
-        public LotteryRow()
+        public LotteryRow() : base()
         {
 
         }

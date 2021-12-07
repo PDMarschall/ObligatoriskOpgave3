@@ -9,7 +9,7 @@ namespace OO3.Lottery_Functionality.Coupon.Joker
 {
     public class JokerRow : Row
     {
-        public JokerRow()
+        public JokerRow() : base()
         {
             
         }
