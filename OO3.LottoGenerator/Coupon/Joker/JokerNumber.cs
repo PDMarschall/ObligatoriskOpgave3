@@ -4,20 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OO3.Lottery_Functionality.Joker
+namespace OO3.Lottery_Functionality.Coupon.Joker
 {
-    public class JokerRow : IVerifiable<JokerRow>
+    public class JokerNumber : IVerifiable<JokerNumber>
     {
-        public JokerRow()
+        public JokerNumber()
         {
 
         }
-        public JokerRow Generate()
+
+        public JokerNumber Generate()
         {
             throw new NotImplementedException();
         }
 
-        public bool Verify(JokerRow entity)
+        public bool Verify(JokerNumber entity)
         {
             throw new NotImplementedException();
         }

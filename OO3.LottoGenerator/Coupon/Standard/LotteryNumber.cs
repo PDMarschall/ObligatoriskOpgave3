@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OO3.Lottery_Functionality.Standard
+namespace OO3.Lottery_Functionality.Coupon.Standard
 {
-    public class LotteryRow : IVerifiable<LotteryNumber>
+    public class LotteryNumber : IVerifiable<LotteryNumber>
     {
-        public LotteryRow()
+        public LotteryNumber()
         {
 
         }

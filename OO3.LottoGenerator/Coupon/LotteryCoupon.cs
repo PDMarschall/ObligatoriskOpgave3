@@ -4,20 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OO3.Lottery_Functionality.Standard
+namespace OO3.Lottery_Functionality.Coupon
 {
-    public class LotteryNumber : IVerifiable<LotteryNumber>
+    public class LotteryCoupon : IVerifiable<LotteryCoupon>
     {
-        public LotteryNumber()
+        public LotteryCoupon()
         {
 
         }
-        public LotteryNumber Generate()
+
+        public LotteryCoupon Generate()
         {
             throw new NotImplementedException();
         }
 
-        public bool Verify(LotteryNumber entity)
+        public bool Verify(LotteryCoupon entity)
         {
             throw new NotImplementedException();
         }
