@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ObligatoriskOpgave3
+namespace OO3.WPF_UI
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
