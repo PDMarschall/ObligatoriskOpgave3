@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using OO3.Lottery_Functionality.Coupon.Standard;
 
 namespace OO3.WPF_UI
 {
