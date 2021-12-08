@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OO3.Lottery_Functionality.Abstract_Classes
 {
-    public abstract class Number
+    public abstract class Number : IComparable<Number>
     {
         public abstract int MaxVærdi { get; }
         public int Værdi { get; set; }
@@ -16,6 +16,11 @@ namespace OO3.Lottery_Functionality.Abstract_Classes
         public Number()
         {
             Værdi = _rnd.Next(MaxVærdi + 1);
+        }
+
+        public int CompareTo(Number other)
+        {
+            return Værdi.CompareTo(other.Værdi);
         }
     }
 }
