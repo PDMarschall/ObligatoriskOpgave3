@@ -17,6 +17,11 @@ namespace OO3.Lottery_Functionality.Coupon.Joker
             {
                 _rowNumberCollection[i] = new JokerNumber();
             }
+
+            for (int i = 0; i < standardLength; i++)
+            {
+                _id += $"{_rowNumberCollection[i]}";
+            }
         }
         public override string ToString()
         {

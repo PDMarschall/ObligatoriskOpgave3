@@ -20,5 +20,17 @@ namespace OO3.Lottery_Functionality.Coupon
         {
             _couponContents = new Row[12];
         }
+
+        private bool VerifyRow(IList<Row> previousRows, Row currentRow)
+        {
+            for (int i = 0; i < previousRows.Count; i++)
+            {
+                if (previousRows[i].Equals(previousRows[i], currentRow))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
     }
 }

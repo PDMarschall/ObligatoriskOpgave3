@@ -15,24 +15,28 @@ namespace OO3.Lottery_Functionality.Coupon.Standard
         {
             _rowNumberCollection = new LotteryNumber[standardLength];
 
-            for (int i = 0; i < standardLength; i++)
+            for (int currentIndex = 0; currentIndex < standardLength; currentIndex++)
             {
-                _rowNumberCollection[i] = new LotteryNumber();
+                _rowNumberCollection[currentIndex] = new LotteryNumber();
 
-                if (i > 0)
+                if (currentIndex > 0)
                 {
-                    for (int j = 0; j < i; j++)
+                    for (int previousIndex = 0; previousIndex < currentIndex; previousIndex++)
                     {
-                        if (_rowNumberCollection[j].Value == _rowNumberCollection[i].Value)
-                        {
-                            _rowNumberCollection[i] = null;
-                            i--;
+                        if (_rowNumberCollection[previousIndex].Value == _rowNumberCollection[currentIndex].Value)
+                        {                            
+                            currentIndex--;
                         }
                     }
                 }
             }
 
             Array.Sort(_rowNumberCollection);
+
+            for (int i = 0; i < standardLength; i++)
+            {
+                _id += $"{_rowNumberCollection[i]}";
+            }
         }
 
         public override string ToString()
