@@ -19,11 +19,11 @@ namespace OO3.Lottery_Functionality.Coupon.Standard
             {
                 _rowNumberCollection[i] = new LotteryNumber();
 
-                if (i < 1)
+                if (i > 0)
                 {
                     for (int j = 0; j < i; j++)
                     {
-                        if (_rowNumberCollection[j].Værdi == _rowNumberCollection[i].Værdi)
+                        if (_rowNumberCollection[j].Value == _rowNumberCollection[i].Value)
                         {
                             _rowNumberCollection[i] = null;
                             i--;
@@ -33,6 +33,11 @@ namespace OO3.Lottery_Functionality.Coupon.Standard
             }
 
             Array.Sort(_rowNumberCollection);
+        }
+
+        public override string ToString()
+        {
+            return String.Join<Number>(' ', _rowNumberCollection);
         }
     }
 }

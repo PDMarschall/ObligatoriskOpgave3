@@ -21,16 +21,11 @@ namespace OO3.WPF_UI
     /// </summary>
     public partial class MainWindow : Window
     {
-        private LotteryRow test = new LotteryRow();
-        private List<LotteryNumber> meretest = new List<LotteryNumber>();
+        private LotteryRow lottery = new LotteryRow();
         public MainWindow()
         {
             InitializeComponent();
-            foreach (LotteryNumber number in test)
-            {
-                meretest.Add(number);
-            }
-            DataGrid.ItemsSource = test;
+            DataGrid.ItemsSource = lottery;
         }
     }
 }

@@ -8,19 +8,19 @@ namespace OO3.Lottery_Functionality.Abstract_Classes
 {
     public abstract class Number : IComparable<Number>
     {
-        public abstract int MaxVærdi { get; }
-        public int Værdi { get; set; }
+        public abstract int MaxValue { get; }
+        public int Value { get; set; }
 
         private Random _rnd = new Random();
 
         public Number()
         {
-            Værdi = _rnd.Next(MaxVærdi + 1);
+            Value = _rnd.Next(1, MaxValue + 1);
         }
 
         public int CompareTo(Number other)
         {
-            return Værdi.CompareTo(other.Værdi);
+            return Value.CompareTo(other.Value);
         }
     }
 }

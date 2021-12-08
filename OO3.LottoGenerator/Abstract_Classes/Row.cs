@@ -12,9 +12,7 @@ namespace OO3.Lottery_Functionality.Abstract_Classes
         protected Number[] _rowNumberCollection;
 
         protected int standardLength = 7;
-
-        protected string _id;
-
+        
         public IEnumerator GetEnumerator()
         {
             return _rowNumberCollection.GetEnumerator();

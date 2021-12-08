@@ -9,10 +9,18 @@ namespace OO3.Lottery_Functionality.Coupon.Standard
 {
     public class LotteryNumber : Number
     {
-        public override int MaxVærdi => 36;
+        public override int MaxValue => 36;
         public LotteryNumber() : base()
         {
 
+        }
+
+        public override string ToString()
+        {
+            if (this.Value < 10)
+                return $"0{this.Value}";
+            else
+                return $"{this.Value}";
         }
     }
 }

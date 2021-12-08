@@ -9,7 +9,7 @@ namespace OO3.Lottery_Functionality.Coupon.Joker
 {
     public class JokerNumber : Number
     {
-        public override int MaxVærdi => 9;
+        public override int MaxValue => 9;
         public JokerNumber() : base()
         {
             
