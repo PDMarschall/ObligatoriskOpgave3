@@ -11,14 +11,15 @@ namespace OO3.Lottery_Functionality.Coupon.Standard
 {
     public class LotteryRow : Row
     {
-        public LotteryRow() : base()
+        public LotteryRow()
         {
-            
-        }
+            _rowNumberCollection = new Number[standardLength];
 
-        public override bool Verify(Row entity)
-        {
-            
+            for (int i = 0; i < standardLength; i++)
+            {
+                _rowNumberCollection[i] = new LotteryNumber();
+
+            }
         }
     }
 }

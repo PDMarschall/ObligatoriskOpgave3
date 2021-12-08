@@ -6,17 +6,12 @@ using System.Threading.Tasks;
 
 namespace OO3.Lottery_Functionality.Abstract_Classes
 {
-    public abstract class Row : IVerifiable<Row>
+    public abstract class Row
     {
-        private IEnumerable<Number> _rowNumberCollection;
+        protected IList<Number> _rowNumberCollection;
 
-        private string _id;
+        protected int standardLength = 7;
 
-        public Row()
-        {
-        
-        }
-                
-        public abstract bool Verify(Row entity);
+        protected string _id;
     }
 }

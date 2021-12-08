@@ -9,14 +9,9 @@ namespace OO3.Lottery_Functionality.Coupon.Joker
 {
     public class JokerRow : Row
     {
-        public JokerRow() : base()
+        public JokerRow()
         {
             
-        }
-
-        public override bool Verify(Row entity)
-        {
-            throw new NotImplementedException();
-        }
+        }        
     }
 }
