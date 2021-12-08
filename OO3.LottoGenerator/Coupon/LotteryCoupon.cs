@@ -9,7 +9,7 @@ namespace OO3.Lottery_Functionality.Coupon
 {
     public class LotteryCoupon : IVerifiable<LotteryCoupon>
     {
-        private IVerifiable<Row>[] _couponContents;
+        private IEnumerable<IVerifiable<Row>> _couponContents;
 
         public LotteryCoupon()
         {
@@ -19,12 +19,7 @@ namespace OO3.Lottery_Functionality.Coupon
         public LotteryCoupon(bool joker)
         {
             _couponContents = new IVerifiable<Row>[12];
-        }
-                
-        public LotteryCoupon Generate()
-        {
-            throw new NotImplementedException();
-        }
+        }               
 
         public bool Verify(LotteryCoupon entity)
         {

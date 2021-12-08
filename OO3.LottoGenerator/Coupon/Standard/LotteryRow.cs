@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OO3.Lottery_Functionality.Abstract_Classes;
+using OO3.Lottery_Functionality.Coupon.Standard;
 
 
 namespace OO3.Lottery_Functionality.Coupon.Standard
@@ -12,17 +13,12 @@ namespace OO3.Lottery_Functionality.Coupon.Standard
     {
         public LotteryRow() : base()
         {
-
-        }
-
-        public override Row Generate()
-        {
-            throw new NotImplementedException();
+            
         }
 
         public override bool Verify(Row entity)
         {
-            throw new NotImplementedException();
+            
         }
     }
 }

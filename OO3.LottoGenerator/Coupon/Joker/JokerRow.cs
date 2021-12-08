@@ -14,11 +14,6 @@ namespace OO3.Lottery_Functionality.Coupon.Joker
             
         }
 
-        public override Row Generate()
-        {
-            throw new NotImplementedException();
-        }
-
         public override bool Verify(Row entity)
         {
             throw new NotImplementedException();

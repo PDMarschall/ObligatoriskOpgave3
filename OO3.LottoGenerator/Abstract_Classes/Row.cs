@@ -14,10 +14,9 @@ namespace OO3.Lottery_Functionality.Abstract_Classes
 
         public Row()
         {
-            Generate();
+        
         }
-
-        public abstract Row Generate();
+                
         public abstract bool Verify(Row entity);
     }
 }
