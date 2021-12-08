@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using OO3.Lottery_Functionality.Coupon.Standard;
+using OO3.Lottery_Functionality.Coupon.Joker;
 
 namespace OO3.WPF_UI
 {
@@ -22,10 +23,12 @@ namespace OO3.WPF_UI
     public partial class MainWindow : Window
     {
         private LotteryRow lottery = new LotteryRow();
+        private JokerRow joker = new JokerRow();
         public MainWindow()
         {
             InitializeComponent();
             DataGrid.ItemsSource = lottery;
+            testblock.Text = joker.ToString();
         }
     }
 }

@@ -12,7 +12,11 @@ namespace OO3.Lottery_Functionality.Coupon.Joker
         public override int MaxValue => 9;
         public JokerNumber() : base()
         {
-            
+
+        }
+        public override string ToString()
+        {
+            return $" {this.Value}";
         }
     }
 }
