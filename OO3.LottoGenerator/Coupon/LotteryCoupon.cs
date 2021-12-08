@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OO3.Lottery_Functionality.Abstract_Classes;
+using OO3.Lottery_Functionality.Coupon.Standard;
 
 namespace OO3.Lottery_Functionality.Coupon
 {
@@ -31,6 +32,10 @@ namespace OO3.Lottery_Functionality.Coupon
                 }
             }
             return true;
+        }
+        public override string ToString()
+        {
+            return String.Join("\n", _couponContents);
         }
     }
 }

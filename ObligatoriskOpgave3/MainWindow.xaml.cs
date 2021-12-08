@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using OO3.Lottery_Functionality.Coupon.Standard;
 using OO3.Lottery_Functionality.Coupon.Joker;
+using OO3.Lottery_Functionality.Coupon;
 
 namespace OO3.WPF_UI
 {
@@ -24,11 +25,12 @@ namespace OO3.WPF_UI
     {
         private LotteryRow lottery = new LotteryRow();
         private JokerRow joker = new JokerRow();
+        private LotteryCoupon coupon = new LotteryCoupon();
         public MainWindow()
         {
             InitializeComponent();
             DataGrid.ItemsSource = lottery;
-            testblock.Text = joker.ToString();
+            testblock.Text = coupon.ToString();
         }
     }
 }

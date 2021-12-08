@@ -7,7 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <DataGrid Name="DataGrid" AutoGenerateColumns="True" Margin="20, 100, 20, 20"/>
         <TextBlock Name="testblock" HorizontalAlignment="Left" Margin="104,51,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
     </Grid>
 </Window>
