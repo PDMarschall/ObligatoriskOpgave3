@@ -17,10 +17,7 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Standard
 
         public override string ToString()
         {
-            if (Value < 10)
-                return $"0{Value}";
-            else
-                return $"{Value}";
+            return $"{Value:0#}";
         }
     }
 }

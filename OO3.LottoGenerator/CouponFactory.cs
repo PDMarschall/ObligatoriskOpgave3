@@ -22,7 +22,7 @@ namespace OO3.Lottery_Functionality
                     ticket = new JokerTicket();
                     break;
                 default:
-                    throw new ArgumentException("Invalid repository type");
+                    throw new ArgumentException("Invalid ticket type");
             }
 
             return ticket;

@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using OO3.Lottery_Functionality.LotteryTypes.Ticket;
+using OO3.Lottery_Functionality;
 
 namespace OO3.WPF_UI
 {
@@ -21,11 +21,20 @@ namespace OO3.WPF_UI
     /// </summary>
     public partial class MainWindow : Window
     {
-        private JokerTicket coupon = new JokerTicket();
         public MainWindow()
         {
-            InitializeComponent();            
-            MiddleBlock.Text = coupon.ToString();
+            InitializeComponent();
+        }
+
+        public void GenerateTickets(string ticketType)
+        {
+            ICoupon ticket = CouponFactory.GetCoupon(ticketType);
+            MiddleBlock.Text = ticket.ToString();
+        }
+
+        private void cmdClick_NewTicket(object sender, RoutedEventArgs e)
+        {
+            GenerateTickets("Joker");
         }
     }
 }

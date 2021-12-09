@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ObligatoriskOpgave3"
         mc:Ignorable="d"
-        Title="MainWindow" Height="250" Width="200">
+        Title="MainWindow" Height="350" Width="200">
     <Grid>
         <TextBlock Name="MiddleBlock" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" Text="TextBlock" TextWrapping="Wrap" />
+        <Button Name="NewTicket" Content="New Ticket" Width="auto" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0, 0, 0, 20" Click="cmdClick_NewTicket"/>
     </Grid>
 </Window>

@@ -16,7 +16,7 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Joker
         }
         public override string ToString()
         {
-            return $" {Value}";
+            return $"  {Value}";
         }
     }
 }
