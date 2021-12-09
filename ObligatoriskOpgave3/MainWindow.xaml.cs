@@ -27,15 +27,14 @@ namespace OO3.WPF_UI
             GenerateTickets("Joker");
         }
 
+        private void cmdClick_NewTicket(object sender, RoutedEventArgs e)
+        {
+            GenerateTickets("Joker");
+        }
         public void GenerateTickets(string ticketType)
         {
             ICoupon ticket = CouponFactory.GetCoupon(ticketType);
             MiddleBlock.Text = ticket.ToString();
-        }
-
-        private void cmdClick_NewTicket(object sender, RoutedEventArgs e)
-        {
-            GenerateTickets("Joker");
         }
     }
 }
