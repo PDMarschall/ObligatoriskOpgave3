@@ -15,6 +15,19 @@ namespace OO3.Lottery_Functionality.Coupon
         public LotteryCoupon()
         {
             _couponContents = new Row[10];
+
+            for (int i = 0; i < _couponContents.Count; i++)
+            {
+                _couponContents[i] = new LotteryRow();
+
+                if (i > 0)
+                {
+                    if (!VerifyRow(_couponContents, _couponContents[i], i))
+                    {
+                        i--;
+                    }
+                }
+            }
         }
 
         public LotteryCoupon(bool joker)
@@ -22,9 +35,9 @@ namespace OO3.Lottery_Functionality.Coupon
             _couponContents = new Row[12];
         }
 
-        private bool VerifyRow(IList<Row> previousRows, Row currentRow)
+        private bool VerifyRow(IList<Row> previousRows, Row currentRow, int iteration)
         {
-            for (int i = 0; i < previousRows.Count; i++)
+            for (int i = 0; i < iteration; i++)
             {
                 if (previousRows[i].Equals(previousRows[i], currentRow))
                 {
