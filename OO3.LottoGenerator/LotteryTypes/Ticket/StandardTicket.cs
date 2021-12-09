@@ -12,6 +12,8 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Ticket
     {
         public StandardTicket()
         {
+            _dateAndTime = DateTime.Today;
+            _timestamp = _dateAndTime.ToShortDateString();
             _couponContents = new LotteryRow[standardRows];
 
             for (int i = 0; i < standardRows; i++)
@@ -27,6 +29,19 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Ticket
                 }
                 _couponContents[i].RowNumber = i+1;
             }
+        }
+        public override string ToString()
+        {
+            StringBuilder builder = new StringBuilder();
+
+            builder.Append($"Lotto {_timestamp}\n\n\n");
+
+            for (int i = 0; i < standardRows; i++)
+            {
+                builder.Append(_couponContents[i] + "\n");
+            }
+
+            return builder.ToString();
         }
     }
 }

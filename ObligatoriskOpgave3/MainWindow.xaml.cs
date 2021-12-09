@@ -24,6 +24,7 @@ namespace OO3.WPF_UI
         public MainWindow()
         {
             InitializeComponent();
+            GenerateTickets("Joker");
         }
 
         public void GenerateTickets(string ticketType)
