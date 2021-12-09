@@ -53,7 +53,7 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Joker
                 builder.Append(_couponContents[i] + "\n");
             }
 
-            builder.Append("******* JOKER TAL *******\n");
+            builder.Append("\n ******** Joker Tal ********\n");
 
             for (int i = 0; i < jokerRows; i++)
             {
