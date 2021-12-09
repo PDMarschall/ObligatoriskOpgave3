@@ -27,6 +27,7 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Ticket
                         i--;
                     }
                 }
+                _couponContents[i].RowNumber = i + 1;
             }
 
             for (int i = 0; i < jokerRows; i++)
