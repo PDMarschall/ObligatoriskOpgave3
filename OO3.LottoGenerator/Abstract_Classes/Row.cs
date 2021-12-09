@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace OO3.Lottery_Functionality.Abstract_Classes
 {
-    public abstract class Row : IEnumerable, IEqualityComparer<Row>
+    public abstract class Row : IEqualityComparer<Row>
     {
         protected Number[] _rowNumberCollection;
         protected string _id;

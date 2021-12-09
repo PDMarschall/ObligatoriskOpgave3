@@ -23,13 +23,10 @@ namespace OO3.WPF_UI
     /// </summary>
     public partial class MainWindow : Window
     {
-        private LotteryRow lottery = new LotteryRow();
-        private JokerRow joker = new JokerRow();
         private LotteryCoupon coupon = new LotteryCoupon();
         public MainWindow()
         {
-            InitializeComponent();
-            DataGrid.ItemsSource = lottery;
+            InitializeComponent();            
             testblock.Text = coupon.ToString();
         }
     }
