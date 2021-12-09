@@ -25,7 +25,7 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Joker
         }
         public override string ToString()
         {
-            string result = "     ";
+            string result = "      ";
             result += string.Join<Number>(' ', _rowNumberCollection);
             return result;
         }
