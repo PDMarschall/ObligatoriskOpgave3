@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using OO3.Lottery_Functionality.LotteryTypes.Ticket;
+using OO3.Lottery_Functionality.LotteryTypes.Joker;
+using OO3.Lottery_Functionality.LotteryTypes.Standard;
 
 namespace OO3.Lottery_Functionality
 {
@@ -16,7 +17,7 @@ namespace OO3.Lottery_Functionality
             switch (couponType)
             {
                 case "Standard":
-                    ticket = new StandardTicket();
+                    ticket = new LotteryTicket();
                     break;
                 case "Joker":
                     ticket = new JokerTicket();

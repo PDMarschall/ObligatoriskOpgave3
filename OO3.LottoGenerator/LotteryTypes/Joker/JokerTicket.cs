@@ -5,10 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using OO3.Lottery_Functionality.Abstract_Classes;
 using OO3.Lottery_Functionality.LotteryTypes.Standard;
-using OO3.Lottery_Functionality.LotteryTypes.Joker;
 
 
-namespace OO3.Lottery_Functionality.LotteryTypes.Ticket
+namespace OO3.Lottery_Functionality.LotteryTypes.Joker
 {
     public class JokerTicket : Coupon
     {
@@ -38,7 +37,7 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Ticket
 
                 if (i > 0)
                 {
-                    if (!VerifyRow(_couponContents, _couponContents[standardRows + i], standardRows+i))
+                    if (!VerifyRow(_couponContents, _couponContents[standardRows + i], standardRows + i))
                     {
                         i--;
                     }

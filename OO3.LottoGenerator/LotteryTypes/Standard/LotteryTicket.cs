@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OO3.Lottery_Functionality.Abstract_Classes;
-using OO3.Lottery_Functionality.LotteryTypes.Standard;
 
-namespace OO3.Lottery_Functionality.LotteryTypes.Ticket
+namespace OO3.Lottery_Functionality.LotteryTypes.Standard
 {
-    public class StandardTicket : Coupon
+    public class LotteryTicket : Coupon
     {
-        public StandardTicket()
+        public LotteryTicket()
         {
             _dateAndTime = DateTime.Today;
             _timestamp = _dateAndTime.ToShortDateString();
@@ -27,7 +26,7 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Ticket
                         i--;
                     }
                 }
-                _couponContents[i].RowNumber = i+1;
+                _couponContents[i].RowNumber = i + 1;
             }
         }
         public override string ToString()
