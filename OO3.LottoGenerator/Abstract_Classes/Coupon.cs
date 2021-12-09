@@ -25,11 +25,5 @@ namespace OO3.Lottery_Functionality.Abstract_Classes
             }
             return true;
         }
-
-        public override string ToString()
-        {
-            return string.Join("\n", _couponContents);
-        }
-
     }
 }
