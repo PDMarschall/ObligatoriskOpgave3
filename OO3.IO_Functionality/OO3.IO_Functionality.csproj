@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OO3.LottoGenerator\OO3.Lottery_Functionality.csproj" />
+    <ProjectReference Include="..\OO3.Lottery_Functionality\OO3.Lottery_Functionality.csproj" />
   </ItemGroup>
 
 </Project>
