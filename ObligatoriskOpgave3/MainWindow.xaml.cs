@@ -21,7 +21,7 @@ namespace OO3.WPF_UI
     /// </summary>
     public partial class MainWindow : Window
     {
-        private StandardTicket coupon = new StandardTicket();
+        private JokerTicket coupon = new JokerTicket();
         public MainWindow()
         {
             InitializeComponent();            
