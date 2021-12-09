@@ -46,6 +46,7 @@ namespace OO3.Lottery_Functionality.Coupon
             }
             return true;
         }
+
         public override string ToString()
         {
             return String.Join("\n", _couponContents);
