@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OO3.Lottery_Functionality.Coupon
+namespace OO3.Lottery_Functionality
 {
     class CouponFactory
     {

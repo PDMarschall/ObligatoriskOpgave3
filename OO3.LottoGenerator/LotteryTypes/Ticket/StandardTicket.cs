@@ -7,7 +7,7 @@ using OO3.Lottery_Functionality.Abstract_Classes;
 
 namespace OO3.Lottery_Functionality.LotteryTypes.Ticket
 {
-    class StandardTicket
+    class StandardTicket : Coupon
     {
 
     }
