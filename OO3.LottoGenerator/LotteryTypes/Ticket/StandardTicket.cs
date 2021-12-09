@@ -12,7 +12,7 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Ticket
     {
         public StandardTicket()
         {
-            _couponContents = new Row[standardRows];
+            _couponContents = new LotteryRow[standardRows];
 
             for (int i = 0; i < standardRows; i++)
             {
@@ -25,6 +25,7 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Ticket
                         i--;
                     }
                 }
+                _couponContents[i].RowNumber = i+1;
             }
         }
     }
