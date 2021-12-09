@@ -7,9 +7,8 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Standard
     public class LotteryTicket : Coupon
     {
         public LotteryTicket()
-        {
-            _dateAndTime = DateTime.Today;
-            _timestamp = _dateAndTime.ToShortDateString();
+        {            
+            _timestamp = DateTime.Today.ToShortDateString();
             _couponContents = new LotteryRow[standardRows];
 
             for (int i = 0; i < standardRows; i++)

@@ -9,9 +9,8 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Joker
     public class JokerTicket : Coupon
     {
         public JokerTicket()
-        {
-            _dateAndTime = DateTime.Today;
-            _timestamp = _dateAndTime.ToShortDateString();
+        {            
+            _timestamp = DateTime.Today.ToShortDateString();
             _couponContents = new Row[standardRows + jokerRows];
 
             for (int i = 0; i < standardRows; i++)
