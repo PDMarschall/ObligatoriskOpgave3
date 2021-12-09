@@ -4,10 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OO3.Lottery_Functionality.Abstract_Classes;
-using OO3.Lottery_Functionality.Coupon.Standard;
 
-
-namespace OO3.Lottery_Functionality.Coupon.Standard
+namespace OO3.Lottery_Functionality.LotteryTypes.Standard
 {
     public class LotteryRow : Row
     {
@@ -24,7 +22,7 @@ namespace OO3.Lottery_Functionality.Coupon.Standard
                     for (int previousIndex = 0; previousIndex < currentIndex; previousIndex++)
                     {
                         if (_rowNumberCollection[previousIndex].Value == _rowNumberCollection[currentIndex].Value)
-                        {                            
+                        {
                             currentIndex--;
                         }
                     }
@@ -41,7 +39,7 @@ namespace OO3.Lottery_Functionality.Coupon.Standard
 
         public override string ToString()
         {
-            return String.Join<Number>(' ', _rowNumberCollection);
+            return string.Join<Number>(' ', _rowNumberCollection);
         }
     }
 }

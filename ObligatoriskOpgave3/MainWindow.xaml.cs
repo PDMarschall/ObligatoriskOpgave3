@@ -12,9 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using OO3.Lottery_Functionality.Coupon.Standard;
-using OO3.Lottery_Functionality.Coupon.Joker;
-using OO3.Lottery_Functionality.Coupon;
+using OO3.Lottery_Functionality.LotteryTypes;
 
 namespace OO3.WPF_UI
 {
@@ -27,7 +25,7 @@ namespace OO3.WPF_UI
         public MainWindow()
         {
             InitializeComponent();            
-            testblock.Text = coupon.ToString();
+            MiddleBlock.Text = coupon.ToString();
         }
     }
 }

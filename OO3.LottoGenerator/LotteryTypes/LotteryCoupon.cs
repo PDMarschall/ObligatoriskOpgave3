@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OO3.Lottery_Functionality.Abstract_Classes;
-using OO3.Lottery_Functionality.Coupon.Standard;
+using OO3.Lottery_Functionality.LotteryTypes.Standard;
 
-namespace OO3.Lottery_Functionality.Coupon
+namespace OO3.Lottery_Functionality.LotteryTypes
 {
     public class LotteryCoupon
     {
@@ -49,7 +49,7 @@ namespace OO3.Lottery_Functionality.Coupon
 
         public override string ToString()
         {
-            return String.Join("\n", _couponContents);
+            return string.Join("\n", _couponContents);
         }
     }
 }

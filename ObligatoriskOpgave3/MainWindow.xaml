@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ObligatoriskOpgave3"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="250" Width="200">
     <Grid>
-        <TextBlock Name="testblock" HorizontalAlignment="Left" Margin="104,51,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock Name="MiddleBlock" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" Text="TextBlock" TextWrapping="Wrap" />
     </Grid>
 </Window>

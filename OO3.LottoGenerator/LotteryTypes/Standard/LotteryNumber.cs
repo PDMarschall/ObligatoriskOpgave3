@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using OO3.Lottery_Functionality.Abstract_Classes;
 
-namespace OO3.Lottery_Functionality.Coupon.Standard
+namespace OO3.Lottery_Functionality.LotteryTypes.Standard
 {
     public class LotteryNumber : Number
     {
@@ -17,10 +17,10 @@ namespace OO3.Lottery_Functionality.Coupon.Standard
 
         public override string ToString()
         {
-            if (this.Value < 10)
-                return $"0{this.Value}";
+            if (Value < 10)
+                return $"0{Value}";
             else
-                return $"{this.Value}";
+                return $"{Value}";
         }
     }
 }

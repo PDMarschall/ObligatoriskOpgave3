@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using OO3.Lottery_Functionality.Abstract_Classes;
 
-namespace OO3.Lottery_Functionality.Coupon.Joker
+namespace OO3.Lottery_Functionality.LotteryTypes.Joker
 {
     public class JokerNumber : Number
     {
@@ -16,7 +16,7 @@ namespace OO3.Lottery_Functionality.Coupon.Joker
         }
         public override string ToString()
         {
-            return $" {this.Value}";
+            return $" {Value}";
         }
     }
 }
