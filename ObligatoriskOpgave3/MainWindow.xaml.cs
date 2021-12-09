@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using OO3.Lottery_Functionality.LotteryTypes;
+using OO3.Lottery_Functionality.LotteryTypes.Ticket;
 
 namespace OO3.WPF_UI
 {
@@ -21,7 +21,7 @@ namespace OO3.WPF_UI
     /// </summary>
     public partial class MainWindow : Window
     {
-        private LotteryCoupon coupon = new LotteryCoupon();
+        private StandardTicket coupon = new StandardTicket();
         public MainWindow()
         {
             InitializeComponent();            
