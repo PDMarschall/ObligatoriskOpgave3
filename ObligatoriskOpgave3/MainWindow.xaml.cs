@@ -18,6 +18,7 @@ namespace OO3.WPF_UI
         {
             GenerateTickets("Joker");
         }
+
         public void GenerateTickets(string ticketType)
         {
             ICoupon ticket = CouponFactory.GetCoupon(ticketType);
