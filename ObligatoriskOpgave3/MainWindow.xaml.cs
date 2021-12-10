@@ -38,7 +38,7 @@ namespace OO3.WPF_UI
             for (int i = 0; i < CouponAmountBox.SelectedIndex + 1; i++)
             {
                 coupons[i] = CouponFactory.GetCoupon(ticketType);
-            }
+            }                        
 
             foreach (ICoupon coupon in coupons)
             {

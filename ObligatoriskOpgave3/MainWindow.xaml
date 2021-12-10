@@ -6,11 +6,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="550" Width="350">
     <Grid>
-        <ScrollViewer VerticalScrollBarVisibility="Auto" >
-        <TextBox Name="MiddleBlock" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" Text="" Width="300" Height="350" TextWrapping="Wrap" BorderThickness="0" IsReadOnly="True"/>
+        <ScrollViewer>
+        <TextBox Name="MiddleBlock" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" Text="" Width="auto" MaxHeight="350" TextWrapping="Wrap" BorderThickness="0" IsReadOnly="True"/>
         </ScrollViewer>
-        
-        <Button Name="NewTicket" Content="New Ticket" Width="70"  HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="180,0,0,50" Click="cmdClick_NewTicket"/>        
+
+        <Button Name="NewTicket" Content="New Ticket" Width="70"  HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="180,0,0,50" Click="cmdClick_NewTicket"/>
         <Button Name="Save" Content="Save" Width="70"  HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="180,0,0,100" Click="cmdClick_Save"/>
 
         <Label Content="Type:" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0, 0, 210, 100"/>
