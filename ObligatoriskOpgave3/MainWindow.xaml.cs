@@ -19,11 +19,6 @@ namespace OO3.WPF_UI
             GenerateTickets(CouponTypeBox.Text);
         }
 
-        private void cmdClick_Clear(object sender, RoutedEventArgs e)
-        {
-            MiddleBlock.Text = "";
-        }
-
         private void cmdClick_Save(object sender, RoutedEventArgs e)
         {
             if (coupons != null)
