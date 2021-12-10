@@ -5,16 +5,13 @@ using OO3.IO_Functionality;
 
 namespace OO3.WPF_UI
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         IList<ICoupon> coupons;
 
         public MainWindow()
         {
-            InitializeComponent();                        
+            InitializeComponent();
         }
 
         private void cmdClick_NewTicket(object sender, RoutedEventArgs e)
@@ -33,13 +30,14 @@ namespace OO3.WPF_UI
             {
                 for (int i = 0; i < coupons.Count; i++)
                 {
-                    FileSaver.SaveCoupon(coupons[i], i);
+                    FileSaver.SaveCouponTxt(coupons[i], i);
                 }
             }
         }
 
         public void GenerateTickets(string ticketType)
         {
+            MiddleBlock.Text = "";
             coupons = new ICoupon[CouponAmountBox.SelectedIndex + 1];
 
             for (int i = 0; i < CouponAmountBox.SelectedIndex + 1; i++)
@@ -52,7 +50,5 @@ namespace OO3.WPF_UI
                 MiddleBlock.Text += coupon;
             }
         }
-
-
     }
 }

@@ -8,7 +8,7 @@ namespace OO3.IO_Functionality
     public static class FileSaver
     {
         const string path = @"C:\temp\";
-        public static void SaveCoupon(ICoupon coupon, int iteration)
+        public static void SaveCouponTxt(ICoupon coupon, int iteration)
         {
             Directory.CreateDirectory(path + $"{DateTime.Today.ToShortDateString()}");
 

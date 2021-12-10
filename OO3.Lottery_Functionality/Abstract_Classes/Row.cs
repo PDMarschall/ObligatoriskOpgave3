@@ -26,11 +26,6 @@ namespace OO3.Lottery_Functionality.Abstract_Classes
                 return false;
         }
 
-        public IEnumerator GetEnumerator()
-        {
-            return _rowNumberCollection.GetEnumerator();
-        }
-
         public int GetHashCode([DisallowNull] Row obj)
         {
             return Convert.ToInt32(obj._id).GetHashCode();

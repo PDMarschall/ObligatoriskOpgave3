@@ -6,7 +6,6 @@ namespace OO3.Lottery_Functionality.Abstract_Classes
     {
         public abstract int MaxValue { get; }
         public int Value { get; set; }
-
         private Random _rnd = new Random();
 
         public Number()
