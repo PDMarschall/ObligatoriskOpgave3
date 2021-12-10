@@ -58,6 +58,7 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Joker
             {
                 builder.Append(_couponContents[standardRows + i] + "\n");
             }
+
             return builder.ToString();
         }
     }
