@@ -6,10 +6,6 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Joker
     {
         public override int MaxValue => 9;
 
-        public JokerNumber() : base()
-        {
-
-        }
         public override string ToString()
         {
             return $"  {Value}";

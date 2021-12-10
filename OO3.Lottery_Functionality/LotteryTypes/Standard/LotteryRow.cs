@@ -4,7 +4,7 @@ using OO3.Lottery_Functionality.Abstract_Classes;
 namespace OO3.Lottery_Functionality.LotteryTypes.Standard
 {
     public class LotteryRow : Row
-    {        
+    {
         public LotteryRow()
         {
             _rowNumberCollection = new LotteryNumber[standardLength];

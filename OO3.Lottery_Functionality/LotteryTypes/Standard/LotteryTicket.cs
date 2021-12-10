@@ -7,7 +7,7 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Standard
     public class LotteryTicket : Coupon
     {
         public LotteryTicket()
-        {            
+        {
             _timestamp = DateTime.Today.ToShortDateString();
             _couponContents = new LotteryRow[standardRows];
 
@@ -29,7 +29,7 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Standard
         {
             StringBuilder builder = new StringBuilder();
 
-            builder.Append($"Lotto {_timestamp}\n\n\n");
+            builder.Append($"   Lotto {_timestamp}\n\n\n");
 
             for (int i = 0; i < standardRows; i++)
             {

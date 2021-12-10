@@ -45,7 +45,7 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Joker
         {
             StringBuilder builder = new StringBuilder();
 
-            builder.Append($"Lotto {_timestamp}\n\n\n");
+            builder.Append($"   Lotto {_timestamp}\n\n\n");
 
             for (int i = 0; i < standardRows; i++)
             {
