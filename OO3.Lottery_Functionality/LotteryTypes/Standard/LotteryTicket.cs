@@ -36,6 +36,8 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Standard
                 builder.Append(_couponContents[i] + "\n");
             }
 
+            builder.Append("\n\n\n");
+
             return builder.ToString();
         }
     }

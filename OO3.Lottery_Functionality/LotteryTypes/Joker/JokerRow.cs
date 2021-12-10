@@ -18,6 +18,7 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Joker
                 _id += $"{_rowNumberCollection[i]}";
             }
         }
+
         public override string ToString()
         {
             string result = "      ";
