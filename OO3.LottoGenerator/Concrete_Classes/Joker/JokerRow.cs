@@ -1,6 +1,6 @@
 ﻿using OO3.Lottery_Functionality.Abstract_Classes;
 
-namespace OO3.Lottery_Functionality.LotteryTypes.Joker
+namespace OO3.Lottery_Functionality.Concrete_Classes.Joker
 {
     public class JokerRow : Row
     {

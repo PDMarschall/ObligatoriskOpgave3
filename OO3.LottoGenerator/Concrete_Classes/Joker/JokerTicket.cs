@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Text;
 using OO3.Lottery_Functionality.Abstract_Classes;
-using OO3.Lottery_Functionality.LotteryTypes.Standard;
+using OO3.Lottery_Functionality.Concrete_Classes.Standard;
 
 
-namespace OO3.Lottery_Functionality.LotteryTypes.Joker
+namespace OO3.Lottery_Functionality.Concrete_Classes.Joker
 {
     public class JokerTicket : Coupon
     {
         public JokerTicket()
-        {            
+        {
             _timestamp = DateTime.Today.ToShortDateString();
             _couponContents = new Row[standardRows + jokerRows];
 
