@@ -10,8 +10,8 @@
         <TextBox Name="MiddleBlock" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" Text="" Width="auto" MaxHeight="350" TextWrapping="Wrap" BorderThickness="0" IsReadOnly="True"/>
         </ScrollViewer>
 
-        <Button Name="NewTicket" Content="New Ticket" Width="70"  HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="180,0,0,50" Click="cmdClick_NewTicket"/>
-        <Button Name="Save" Content="Save" Width="70"  HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="180,0,0,100" Click="cmdClick_Save"/>
+        <Button Name="NewTicket" Content="New Coupon" Width="90"  HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="180,0,0,50" Click="cmdClick_NewTicket"/>
+        <Button Name="Save" Content="Save Coupon" Width="90"  HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="180,0,0,100" Click="cmdClick_Save"/>
 
         <Label Content="Type:" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0, 0, 230, 100"/>
         <Label Content="Amount:" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0, 0, 230, 50"/>
@@ -20,7 +20,7 @@
             <ComboBoxItem IsSelected="True">Standard</ComboBoxItem>
             <ComboBoxItem>Joker</ComboBoxItem>
         </ComboBox>
-        <ComboBox Name="CouponAmountBox" Width="80"  HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0, 0, 90, 100">
+        <ComboBox Name="CouponAmountBox" Width="80"  HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0, 0, 90, 100" SelectionChanged="Amount_SelectionChanged">
             <ComboBoxItem IsSelected="True">1</ComboBoxItem>
             <ComboBoxItem>2</ComboBoxItem>
             <ComboBoxItem>3</ComboBoxItem>

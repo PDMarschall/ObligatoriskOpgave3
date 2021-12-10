@@ -38,12 +38,18 @@ namespace OO3.WPF_UI
             for (int i = 0; i < CouponAmountBox.SelectedIndex + 1; i++)
             {
                 coupons[i] = CouponFactory.GetCoupon(ticketType);
-            }                        
+            }
 
             foreach (ICoupon coupon in coupons)
             {
                 MiddleBlock.Text += coupon;
             }
+        }
+
+        private void Amount_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+            NewTicket.Content = CouponAmountBox.SelectedIndex > 0 ? "New Coupons" : "New Coupon";
+            Save.Content = CouponAmountBox.SelectedIndex > 0 ? "Save Coupons" : "New Coupon";
         }
     }
 }

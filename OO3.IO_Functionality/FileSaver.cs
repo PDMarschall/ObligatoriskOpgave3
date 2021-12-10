@@ -12,7 +12,7 @@ namespace OO3.IO_Functionality
         {
             Directory.CreateDirectory(path + $"{DateTime.Today.ToShortDateString()}");
 
-            StreamWriter writer = new StreamWriter(path + $"{DateTime.Today.ToShortDateString()}\\LotteryCoupon{iteration:0#}.txt");
+            StreamWriter writer = new StreamWriter(path + $"{DateTime.Today.ToShortDateString()}\\LotteryCoupon{iteration + 1:0#}.txt");
 
             writer.WriteLine(coupon);
             writer.Close();
