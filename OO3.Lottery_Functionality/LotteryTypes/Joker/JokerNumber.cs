@@ -5,6 +5,7 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Joker
     public class JokerNumber : Number
     {
         public override int MaxValue => 9;
+
         public JokerNumber() : base()
         {
 
