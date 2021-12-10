@@ -2,12 +2,12 @@
 using System.Text;
 using OO3.Lottery_Functionality.Abstract_Classes;
 
-namespace OO3.Lottery_Functionality.Concrete_Classes.Standard
+namespace OO3.Lottery_Functionality.LotteryTypes.Standard
 {
     public class LotteryTicket : Coupon
     {
         public LotteryTicket()
-        {
+        {            
             _timestamp = DateTime.Today.ToShortDateString();
             _couponContents = new LotteryRow[standardRows];
 

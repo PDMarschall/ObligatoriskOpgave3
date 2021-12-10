@@ -1,6 +1,6 @@
 ﻿using System;
-using OO3.Lottery_Functionality.Concrete_Classes.Joker;
-using OO3.Lottery_Functionality.Concrete_Classes.Standard;
+using OO3.Lottery_Functionality.LotteryTypes.Joker;
+using OO3.Lottery_Functionality.LotteryTypes.Standard;
 
 namespace OO3.Lottery_Functionality
 {
