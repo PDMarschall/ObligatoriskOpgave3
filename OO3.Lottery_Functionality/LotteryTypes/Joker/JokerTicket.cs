@@ -10,7 +10,7 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Joker
     {
         public JokerTicket()
         {            
-            _timestamp = DateTime.Today.ToShortDateString();
+            timestamp = DateTime.Today.ToShortDateString();
             _couponContents = new Row[standardRows + jokerRows];
 
             for (int i = 0; i < standardRows; i++)
@@ -45,7 +45,7 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Joker
         {
             StringBuilder builder = new StringBuilder();
 
-            builder.Append($"   Lotto {_timestamp}\n\n\n");
+            builder.Append($"   Lotto {timestamp}\n\n\n");
 
             for (int i = 0; i < standardRows; i++)
             {
