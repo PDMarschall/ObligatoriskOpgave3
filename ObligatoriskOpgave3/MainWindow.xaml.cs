@@ -40,11 +40,5 @@ namespace OO3.WPF_UI
                 MiddleBlock.Text += coupon;
             }
         }
-
-        private void Amount_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
-        {
-            NewTicket.Content = CouponAmountBox.SelectedIndex > 0 ? "New Coupons" : "New Coupon";
-            Save.Content = CouponAmountBox.SelectedIndex > 0 ? "Save Coupons" : "Save Coupon";
-        }
     }
 }
