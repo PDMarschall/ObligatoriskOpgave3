@@ -22,12 +22,7 @@ namespace OO3.WPF_UI
         private void cmdClick_Save(object sender, RoutedEventArgs e)
         {
             if (coupons != null)
-            {
-                for (int i = 0; i < coupons.Count; i++)
-                {
-                    FileSaver.SaveCouponTxt(coupons[i], i);
-                }
-            }
+                FileSaver.SaveCouponTxt(coupons);
         }
 
         public void GenerateTickets(string ticketType)

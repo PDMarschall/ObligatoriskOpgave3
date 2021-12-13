@@ -2,20 +2,24 @@
 using System.IO;
 using OO3.Lottery_Functionality.Abstract_Classes;
 using OO3.Lottery_Functionality;
+using System.Collections.Generic;
 
 namespace OO3.IO_Functionality
 {
     public static class FileSaver
     {
-        const string path = @"C:\temp\";
-        public static void SaveCouponTxt(ICoupon coupon, int iteration)
+        const string path = @"D:\Temp\";
+        public static void SaveCouponTxt(IList<ICoupon> coupons)
         {
-            Directory.CreateDirectory(path + $"{DateTime.Today.ToShortDateString()}");
+            Directory.CreateDirectory(path + $"{DateTime.Today.ToString("dd-M-yyyy-t")}");
 
-            StreamWriter writer = new StreamWriter(path + $"{DateTime.Today.ToShortDateString()}\\LotteryCoupon{iteration + 1:0#}.txt");
+            for (int i = 0; i < coupons.Count; i++)
+            {
+                StreamWriter writer = new StreamWriter(path + $"{DateTime.Today.ToString("dd-M-yyyy-t")}\\LotteryCoupon{i + 1:0#}.txt");
 
-            writer.WriteLine(coupon);
-            writer.Close();
+                writer.WriteLine(coupons[i]);
+                writer.Close();
+            }
         }
     }
 }
