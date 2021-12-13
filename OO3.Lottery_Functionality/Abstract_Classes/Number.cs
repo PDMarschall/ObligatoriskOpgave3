@@ -5,7 +5,7 @@ namespace OO3.Lottery_Functionality.Abstract_Classes
     public abstract class Number : IComparable<Number>
     {
         public abstract int MaxValue { get; }
-        public int Value { get; set; }
+        public int Value { get; protected set; }
         private Random _rnd = new Random();
 
         public Number()

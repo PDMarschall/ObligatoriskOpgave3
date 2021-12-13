@@ -8,7 +8,8 @@ namespace OO3.Lottery_Functionality.Abstract_Classes
         protected IList<Row> _couponContents;
         protected int standardRows = 10;
         protected int jokerRows = 2;
-        protected string _timestamp;
+        protected string timestamp;
+
 
         public bool VerifyRow(IList<Row> previousRows, Row currentRow, int iteration)
         {
