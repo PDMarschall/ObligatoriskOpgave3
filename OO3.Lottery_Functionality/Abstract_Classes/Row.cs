@@ -9,7 +9,7 @@ namespace OO3.Lottery_Functionality.Abstract_Classes
     {
         protected Number[] _rowNumberCollection;
         protected string _id;
-        protected int standardLength = 7;
+        protected int standardNumberAmount = 7;
         public int RowNumber { get; set; }
 
         public bool Equals(Row x, Row y)

@@ -9,36 +9,16 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Standard
         public LotteryTicket()
         {
             timestamp = DateTime.Today.ToShortDateString();
-            _couponContents = new LotteryRow[standardRows];
+            couponContents = new LotteryRow[standardRows];
 
-            for (int i = 0; i < standardRows; i++)
-            {
-                _couponContents[i] = new LotteryRow();
+            couponContents = GetStandardRows();
 
-                if (i > 0)
-                {
-                    if (!VerifyRow(_couponContents, _couponContents[i], i))
-                    {
-                        i--;
-                    }
-                }
-                _couponContents[i].RowNumber = i + 1;
-            }
+            standardCouponString = this.StandardString();
         }
+
         public override string ToString()
         {
-            StringBuilder builder = new StringBuilder();
-
-            builder.Append($"   Lotto {timestamp}\n\n\n");
-
-            for (int i = 0; i < standardRows; i++)
-            {
-                builder.Append(_couponContents[i] + "\n");
-            }
-
-            builder.Append("\n\n\n");
-
-            return builder.ToString();
+            return this.standardCouponString;
         }
     }
 }

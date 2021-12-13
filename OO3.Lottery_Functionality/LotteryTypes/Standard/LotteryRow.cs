@@ -7,9 +7,9 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Standard
     {
         public LotteryRow()
         {
-            _rowNumberCollection = new LotteryNumber[standardLength];
+            _rowNumberCollection = new LotteryNumber[standardNumberAmount];
 
-            for (int currentIndex = 0; currentIndex < standardLength; currentIndex++)
+            for (int currentIndex = 0; currentIndex < standardNumberAmount; currentIndex++)
             {
                 _rowNumberCollection[currentIndex] = new LotteryNumber();
 
@@ -27,7 +27,7 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Standard
 
             Array.Sort(_rowNumberCollection);
 
-            for (int i = 0; i < standardLength; i++)
+            for (int i = 0; i < standardNumberAmount; i++)
             {
                 _id += $"{_rowNumberCollection[i]}";
             }

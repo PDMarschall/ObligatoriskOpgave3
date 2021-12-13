@@ -6,14 +6,14 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Joker
     {
         public JokerRow()
         {
-            _rowNumberCollection = new JokerNumber[standardLength];
+            _rowNumberCollection = new JokerNumber[standardNumberAmount];
 
-            for (int i = 0; i < standardLength; i++)
+            for (int i = 0; i < standardNumberAmount; i++)
             {
                 _rowNumberCollection[i] = new JokerNumber();
             }
 
-            for (int i = 0; i < standardLength; i++)
+            for (int i = 0; i < standardNumberAmount; i++)
             {
                 _id += $"{_rowNumberCollection[i]}";
             }
