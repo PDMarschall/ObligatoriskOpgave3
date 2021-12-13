@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="OO3.Lottery_Functionality.Abstract_Classes.Coupon" Collapsed="true">
+    <Position X="16" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAABAACAAAAAAgAAAAAgAAAAGAAAAAAAAAACA=</HashCode>
+      <FileName>Abstract_Classes\Coupon.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OO3.Lottery_Functionality.Abstract_Classes.Number" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAQAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Abstract_Classes\Number.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OO3.Lottery_Functionality.Abstract_Classes.Row" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAIAAAAgABAAAAAAAAAAIAAAAAAAQAAAAA=</HashCode>
+      <FileName>Abstract_Classes\Row.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OO3.Lottery_Functionality.LotteryTypes.Joker.JokerNumber" Collapsed="true">
+    <Position X="12" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>LotteryTypes\Joker\JokerNumber.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OO3.Lottery_Functionality.LotteryTypes.Joker.JokerRow" Collapsed="true">
+    <Position X="9.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LotteryTypes\Joker\JokerRow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OO3.Lottery_Functionality.LotteryTypes.Joker.JokerTicket" Collapsed="true">
+    <Position X="17" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LotteryTypes\Joker\JokerTicket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OO3.Lottery_Functionality.LotteryTypes.Standard.LotteryNumber" Collapsed="true">
+    <Position X="9.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>LotteryTypes\Standard\LotteryNumber.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OO3.Lottery_Functionality.LotteryTypes.Standard.LotteryRow" Collapsed="true">
+    <Position X="12" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LotteryTypes\Standard\LotteryRow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OO3.Lottery_Functionality.LotteryTypes.Standard.LotteryTicket" Collapsed="true">
+    <Position X="14.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LotteryTypes\Standard\LotteryTicket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OO3.Lottery_Functionality.CouponFactory" Collapsed="true">
+    <Position X="19.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CouponFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="OO3.Lottery_Functionality.ICoupon" Collapsed="true">
+    <Position X="19.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ICoupon.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
