@@ -7,15 +7,18 @@ namespace OO3.Lottery_Functionality.Abstract_Classes
 {
     public abstract class Coupon : ICoupon
     {
-        protected IList<Row> couponContents;
+        //Control Tower for coupons and related methods
         protected int standardRows = 10;
         protected int jokerRows = 2;
+
+
+        protected IList<Row> couponContents;
         protected string timestamp;
         protected string standardCouponString;
 
         protected IList<Row> GetStandardRows()
         {
-            for (int i = 0; i < standardRows; i++) //standard ticket
+            for (int i = 0; i < standardRows; i++)
             {
                 couponContents[i] = new LotteryRow();
 
