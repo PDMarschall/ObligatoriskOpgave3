@@ -49,7 +49,7 @@ namespace OO3.WPF_UI
         private void Amount_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
             NewTicket.Content = CouponAmountBox.SelectedIndex > 0 ? "New Coupons" : "New Coupon";
-            Save.Content = CouponAmountBox.SelectedIndex > 0 ? "Save Coupons" : "New Coupon";
+            Save.Content = CouponAmountBox.SelectedIndex > 0 ? "Save Coupons" : "Save Coupon";
         }
     }
 }
