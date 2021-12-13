@@ -11,7 +11,6 @@ namespace OO3.Lottery_Functionality.Abstract_Classes
         protected int standardRows = 10;
         protected int jokerRows = 2;
 
-
         protected IList<Row> couponContents;
         protected string timestamp;
         protected string standardCouponString;
