@@ -9,7 +9,7 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Standard
         public LotteryTicket()
         {
             timestamp = DateTime.Today.ToShortDateString();
-            couponContents = new Row[standardRows];
+            couponContents = new LotteryRow[standardRows];
 
             couponContents = GetStandardRows();
 
