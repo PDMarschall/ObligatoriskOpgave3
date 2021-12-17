@@ -7,13 +7,17 @@ namespace OO3.Lottery_Functionality.Abstract_Classes
 {
     public abstract class Coupon : ICoupon
     {
-        //Control Tower for coupons and related methods
+        //The contents of the coupon
         protected int standardRows = 10;
-        protected int jokerRows = 2;
-
+        protected int jokerRows = 2;        
         protected IList<Row> couponContents;
+
+        //the formatting of the coupon
         protected string timestamp;
         protected string standardCouponString;
+        private int rowNumberSpacing = 4;
+        private int numberSpacing = 2;
+        private int numberWidth = 2;
 
         protected IList<Row> GetStandardRows()
         {
@@ -48,10 +52,8 @@ namespace OO3.Lottery_Functionality.Abstract_Classes
 
         protected string StandardString()
         {
-            int rowNumberSpacing = 4;
-            int numberSpacing = 2;
-            int numberWidth = 2;
-            int couponWidth = couponContents[0].GetLength() * numberWidth + (couponContents[0].GetLength()-1) * numberSpacing + rowNumberSpacing;
+            
+            int couponWidth = couponContents[0].GetLength() * numberWidth + (couponContents[0].GetLength() - 1) * numberSpacing + rowNumberSpacing;
 
             string dateLine = $"Lotto {timestamp}";
             string duration = "1-Uge";
@@ -59,24 +61,13 @@ namespace OO3.Lottery_Functionality.Abstract_Classes
 
             StringBuilder builder = new StringBuilder();
 
-            builder.Append(new String(' ', (couponWidth / 2) - (dateLine.Length / 2)));
-            builder.Append(dateLine);
+            builder.Append(FormattingHelper.CenterString(dateLine, (couponWidth / 2) - (dateLine.Length / 2)));
             builder.Append("\n\n");
-            builder.Append(new String(' ', (couponWidth / 2) - (duration.Length / 2)));
-            builder.Append(duration);
+            builder.Append(FormattingHelper.CenterString(duration, (couponWidth / 2) - (duration.Length / 2)));
             builder.Append("\n");
-            builder.Append(new String(' ', (couponWidth / 2) - (couponType.Length / 2)));
-            builder.Append(couponType);
-            builder.Append("\n\n");
+            builder.Append(FormattingHelper.CenterString(couponType, (couponWidth / 2) - (couponType.Length / 2)));
             builder.Append("\n\n");
 
-
-
-
-
-            //builder.Append($"   Lotto {timestamp}\n\n");
-            //builder.Append("    1-uge\n");
-            //builder.Append("    LYN-LOTTO\n\n");
 
             for (int i = 0; i < standardRows; i++)
             {
