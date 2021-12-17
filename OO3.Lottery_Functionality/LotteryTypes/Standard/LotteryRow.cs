@@ -35,8 +35,8 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Standard
 
         public override string ToString()
         {
-            string result = RowNumber > 9 ? $"{RowNumber}. " : $"  {RowNumber}. ";
-            result += string.Join<Number>(' ', _rowNumberCollection);
+            string result = RowNumber > 9 ? $"{RowNumber}.    " : $"  {RowNumber}.    ";
+            result += string.Join<Number>("  ", _rowNumberCollection);
             return result;
         }
     }
