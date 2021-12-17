@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Text;
 using OO3.Lottery_Functionality.Abstract_Classes;
-using OO3.Lottery_Functionality.LotteryTypes.Standard;
 using System.Collections.Generic;
 
 
@@ -14,15 +13,15 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Joker
             timestamp = DateTime.Today.ToShortDateString();
             couponContents = new Row[standardRows + jokerRows];
 
-            couponContents = GetStandardRows();
-            couponContents = GetJokerRows();
+            GetStandardRows();
+            GetJokerRows();
 
             standardCouponString = this.StandardString();
         }
 
         private IList<Row> GetJokerRows()
         {
-            for (int i = 0; i < jokerRows; i++) //joker rows
+            for (int i = 0; i < jokerRows; i++)
             {
                 couponContents[standardRows + i] = new JokerRow();
 
@@ -38,7 +37,7 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Joker
             return couponContents;
         }
 
-        public override string ToString() //finish string representation
+        public override string ToString()
         {
             StringBuilder builder = new StringBuilder();
 
@@ -51,7 +50,7 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Joker
                 builder.Append(couponContents[standardRows + i] + "\n");
             }
 
-            builder.Append("\n\n\n");
+            builder.Append("\n\n");
 
             return builder.ToString();
         }

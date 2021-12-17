@@ -50,7 +50,9 @@ namespace OO3.Lottery_Functionality.Abstract_Classes
         {
             StringBuilder builder = new StringBuilder();
 
-            builder.Append($"   Lotto {timestamp}\n\n\n");
+            builder.Append($"   Lotto {timestamp}\n\n");
+            builder.Append("    1-uge\n");
+            builder.Append("    LYN-LOTTO\n\n");
 
             for (int i = 0; i < standardRows; i++)
             {
