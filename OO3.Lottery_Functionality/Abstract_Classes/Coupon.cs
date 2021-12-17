@@ -7,13 +7,17 @@ namespace OO3.Lottery_Functionality.Abstract_Classes
 {
     public abstract class Coupon : ICoupon
     {
-        //Control Tower for coupons and related methods
+        //The contents of the coupon
         protected int standardRows = 10;
-        protected int jokerRows = 2;
-
+        protected int jokerRows = 2;        
         protected IList<Row> couponContents;
+
+        //the formatting of the coupon
         protected string timestamp;
         protected string standardCouponString;
+        private int rowNumberSpacing = 4;
+        private int numberSpacing = 2;
+        private int numberWidth = 2;
 
         protected IList<Row> GetStandardRows()
         {
@@ -48,9 +52,22 @@ namespace OO3.Lottery_Functionality.Abstract_Classes
 
         protected string StandardString()
         {
+            
+            int couponWidth = couponContents[0].GetLength() * numberWidth + (couponContents[0].GetLength() - 1) * numberSpacing + rowNumberSpacing;
+
+            string dateLine = $"Lotto {timestamp}";
+            string duration = "1-Uge";
+            string couponType = "LYN-LOTTO";
+
             StringBuilder builder = new StringBuilder();
 
-            builder.Append($"   Lotto {timestamp}\n\n\n");
+            builder.Append(FormattingHelper.CenterString(dateLine, (couponWidth / 2) - (dateLine.Length / 2)));
+            builder.Append("\n\n");
+            builder.Append(FormattingHelper.CenterString(duration, (couponWidth / 2) - (duration.Length / 2)));
+            builder.Append("\n");
+            builder.Append(FormattingHelper.CenterString(couponType, (couponWidth / 2) - (couponType.Length / 2)));
+            builder.Append("\n\n");
+
 
             for (int i = 0; i < standardRows; i++)
             {

@@ -11,14 +11,17 @@ namespace OO3.Lottery_Functionality.LotteryTypes.Standard
             timestamp = DateTime.Today.ToShortDateString();
             couponContents = new LotteryRow[standardRows];
 
-            couponContents = GetStandardRows();
+            GetStandardRows();
 
             standardCouponString = this.StandardString();
         }
 
         public override string ToString()
         {
-            return this.standardCouponString;
+            StringBuilder builder = new StringBuilder();
+            builder.Append(standardCouponString);
+            builder.Append("\n\n");
+            return builder.ToString();
         }
     }
 }

@@ -30,5 +30,10 @@ namespace OO3.Lottery_Functionality.Abstract_Classes
         {
             return Convert.ToInt32(obj._id).GetHashCode();
         }
+
+        public int GetLength()
+        {
+            return standardNumberAmount;
+        }
     }
 }

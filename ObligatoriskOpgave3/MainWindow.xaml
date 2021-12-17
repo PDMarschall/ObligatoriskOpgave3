@@ -7,7 +7,7 @@
         Title="MainWindow" Height="550" Width="350">
     <Grid>
         <ScrollViewer VerticalScrollBarVisibility="Hidden">
-        <TextBox Name="MiddleBlock" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" Text="" Width="auto" MaxHeight="350" TextWrapping="Wrap" BorderThickness="0" IsReadOnly="True"/>
+        <TextBox Name="MiddleBlock" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" Text="" Width="auto" MaxHeight="350" TextWrapping="Wrap" BorderThickness="0" IsReadOnly="True"/>
         </ScrollViewer>
 
         <Button Name="NewTicket" Content="New Coupon" Width="90"  HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="180,0,0,50" Click="cmdClick_NewTicket"/>
