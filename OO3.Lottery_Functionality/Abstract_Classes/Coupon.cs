@@ -48,11 +48,35 @@ namespace OO3.Lottery_Functionality.Abstract_Classes
 
         protected string StandardString()
         {
+            int rowNumberSpacing = 4;
+            int numberSpacing = 2;
+            int numberWidth = 2;
+            int couponWidth = couponContents[0].GetLength() * numberWidth + (couponContents[0].GetLength()-1) * numberSpacing + rowNumberSpacing;
+
+            string dateLine = $"Lotto {timestamp}";
+            string duration = "1-Uge";
+            string couponType = "LYN-LOTTO";
+
             StringBuilder builder = new StringBuilder();
 
-            builder.Append($"   Lotto {timestamp}\n\n");
-            builder.Append("    1-uge\n");
-            builder.Append("    LYN-LOTTO\n\n");
+            builder.Append(new String(' ', (couponWidth / 2) - (dateLine.Length / 2)));
+            builder.Append(dateLine);
+            builder.Append("\n\n");
+            builder.Append(new String(' ', (couponWidth / 2) - (duration.Length / 2)));
+            builder.Append(duration);
+            builder.Append("\n");
+            builder.Append(new String(' ', (couponWidth / 2) - (couponType.Length / 2)));
+            builder.Append(couponType);
+            builder.Append("\n\n");
+            builder.Append("\n\n");
+
+
+
+
+
+            //builder.Append($"   Lotto {timestamp}\n\n");
+            //builder.Append("    1-uge\n");
+            //builder.Append("    LYN-LOTTO\n\n");
 
             for (int i = 0; i < standardRows; i++)
             {
